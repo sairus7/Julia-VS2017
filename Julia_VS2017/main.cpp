@@ -30,13 +30,13 @@ int main(int argc, char *argv[])
   // 2. How to pass CBar object to Julia?
   CBar bar_obj;
   
-  // 3. How to call CBar object function bar_obj.foo() from Julia?
+  // 3. How to call CBar object method bar_obj.foo() from Julia?
   bar_obj.foo(7);
   
   // 4. How to pass IBar interface object to Julia?
   IBar * ibar = (IBar*)&bar_obj;
 
-  // 5. How to call interface object function ibar->foo() from Julia?
+  // 5. How to call IBar interface object method ibar->foo() from Julia?
   ibar->foo(7);
 
   // ====================================
